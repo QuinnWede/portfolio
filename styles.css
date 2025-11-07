@@ -1,0 +1,123 @@
+html {
+    overflow-x: hidden;
+}
+
+
+body {
+    font-family: Helvetica, sans-serif;
+    margin: 0;
+
+    margin-bottom: 1000px;
+    background-image: url('hero-image.JPG');
+    background-size: 100% auto;
+    background-position: top center;
+    background-repeat: no-repeat;
+
+}
+
+header {
+    padding-top: 36px;
+    padding-left: 128px;
+    padding-right: 128px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+main {
+    padding-left: 128px;
+    padding-right: 128px;
+
+}
+
+h1 {
+    font-size: 48px;
+    font-weight: 650;
+    margin: 0;
+    position: relative; 
+    padding: 4px;
+    padding-left: 6px;
+
+}
+
+p {
+    font-size: 24px;
+    font-weight: 600;
+    margin: 0;
+    position: relative;
+    padding: 4px;
+    padding-left: 6px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    padding-right: 6px;
+    padding-top: 2px;
+}
+
+li a {
+    margin-left: 32px;
+    color: white;
+    font-weight: 600;
+}
+
+body::before,
+body::after {
+    content: '';
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+body::before {
+    left: 128px; 
+}
+
+body::after {
+    right: 128px;
+}
+
+/* Creates the top line for the H1 */
+h1::before {
+    content: ''; /* Required for pseudo-elements */
+    position: absolute;
+    top: 0; /* Align to the very top of the h1 */
+    height: 2px;
+    background-color: rgba(255, 255, 255, 0.6);
+
+    width: 150vw;
+    /* left: 50%; */
+    transform: translateX(-50vw);
+}
+
+/* Creates the bottom line for the H1 */
+h1::after {
+    content: '';
+    position: absolute;
+    bottom: 0; /* Align to the very bottom of the h1 */
+    height: 2px;
+    background-color: rgba(255, 255, 255, 0.6);
+
+
+    width: 150vw;
+    /* left: 50%; */
+    transform: translateX(-50vw);
+}
+
+/* Creates the bottom line for the P */
+p::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    height: 2px;
+    background-color: rgba(255, 255, 255, 0.6);
+
+    width: 150vw;
+    /* left: 50%; */
+    transform: translateX(-50vw);
+}
