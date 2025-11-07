@@ -1,6 +1,8 @@
 html {
     overflow-x: hidden;
-    height: 5666px;
+    height: 4111px;
+    margin-left: 128px;
+    margin-right: 128px;
 }
 
 
@@ -18,8 +20,8 @@ body {
 
 header {
     padding-top: 36px;
-    padding-left: 128px;
-    padding-right: 128px;
+    /* padding-left: 128px;
+    padding-right: 128px; */
     display: flex;
     justify-content: right;
 
