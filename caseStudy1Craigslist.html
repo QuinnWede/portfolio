@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+		<title>What shows up on tab</title>
+		<meta name="author" content="your name">
+		<meta name="description" content="Conversational description of content">
+		<link rel="icon" href="images/favicon.ico" type="image/x-icon">
+		<link rel="stylesheet" href="stylesCaseStudies.css">
+	</head>
+	<body>
+		<div class="case-study-page">
+			<nav class="case-study-nav">
+			  <div class="container">
+				<Link to="/">← Back to portfolio</Link>
+			  </div>
+			</nav>
+	  
+			<header class="case-hero">
+			  <div class="container">
+				<h1 class="case-hero-title">
+				  Craigslist UX Redesign
+				</h1>
+				
+				<div class="case-hero-content">
+				  <img 
+					src={imgLaptopMockup} 
+					alt="Craigslist redesign mockup" 
+					class="case-hero-image"
+				  />
+				  <div class="case-hero-text">
+					<div>
+					  <h2 class="case-section-title">The Challenge</h2>
+					  <p class="case-section-text">Craigslist has long been the king of classifieds, but its user base is declining. My preliminary research identified that the platform's outdated, text-heavy interface was actively creating a perception of untrustworthiness among younger demographics.</p>
+					</div>
+					<div>
+					  <h2 class="case-section-title">The Solution</h2>
+					  <p class="case-section-text">I redesigned the landing page and posting flow, shifting from an overwhelming wall of text to a streamlined, hierarchical interface. By introducing a modern design system with clear calls-to-action (CTAs), I aimed to reduce cognitive load and restore user confidence.</p>
+					</div>
+					<div>
+					  <h2 class="case-section-title">My Role</h2>
+					  <p class="case-section-text">I worked in a team of 4 for the user research, then worked individually to complete a heuristic evaluation, card sorting, wireframing, and a final prototype.</p>
+					</div>
+					<div>
+					  <h2 class="case-section-title">Timeline</h2>
+					  <p class="case-section-text">12 weeks</p>
+					</div>
+				  </div>
+				</div>
+			  </div>
+			</header>
+	  
+			<section class="content-section">
+			  <div class="container">
+				<h2 class="section-title section-title-center">Before and After</h2>
+				
+				<div class="before-after-grid">
+				  <div class="before-after-item">
+					<h3>Before</h3>
+					<img 
+					  src={imgImage7} 
+					  alt="Current Craigslist desktop website" 
+					/>
+					<p>The current Craigslist desktop website</p>
+				  </div>
+				  <div class="before-after-item">
+					<h3>After</h3>
+					<img 
+					  src={imgProto0000} 
+					  alt="Redesigned homepage" 
+					/>
+					<p>High fidelity prototype of the homepage</p>
+				  </div>
+				</div>
+			  </div>
+			</section>
+	  
+			<section class="content-section alt">
+			  <div class="container">
+				<h2 class="section-title">The Problem</h2>
+				
+				<div class="content-text">
+				  <p>Triangulating data from a heuristic evaluation, user survey (n=17), and usability testing (n=8) revealed three root causes driving user churn.</p>
+				  
+				  <ol>
+					<li>
+					  <strong>Heuristic Evaluation:</strong> I performed a heuristic analysis of the existing site, identifying critical violations of usability principles.
+					  <ul>
+						<li><strong>Consistency & Standards:</strong> The "Search Filter" sidebar contained redundant options and inconsistent visual hierarchy.</li>
+						<li><strong>Error Prevention:</strong> The posting flow lacked confirmation prompts for destructive actions.</li>
+					  </ul>
+					</li>
+					
+					<li>
+					  <strong>User Survey:</strong> I surveyed 17 active Internet users to understand general perceptions.
+					  <ul>
+						<li><strong>Trust Deficit:</strong> 33% of users had a negative first impression, describing the UI as "sketchy" or "messy". One user explicitly noted that the interface made them feel "at risk" meeting sellers.</li>
+					  </ul>
+					</li>
+					
+					<li>
+					  <strong>Baseline Usability Testing:</strong> To see where users were failing, I conducted moderated usability tests with 8 participants on the existing Craigslist site.
+					  <ul>
+						<li><strong>The "Invisible" Button:</strong> 25% of users struggled to find the "Post an Ad" button because its location and visual weight did not align with mental models.</li>
+						<li><strong>Search Failure:</strong> 62% of participants struggled with the search filters due to redundancy in the options.</li>
+						<li><strong>Navigation Overload:</strong> 33% of users verbalized feeling overwhelmed by the homepage density, confirming that the "link farm" architecture was causing cognitive strain.</li>
+					  </ul>
+					</li>
+				  </ol>
+				</div>
+			  </div>
+			</section>
+	  
+			<section class="content-section">
+			  <div class="container">
+				<h2 class="section-title section-title-center">User Personas</h2>
+				
+				<div class="content-text">
+				  <p> <!-- style={{ textAlign: 'center' }} -->  
+					From the user data I collected in the research phase, I made three personas to design around. Like "Bad Jones" (27, Student), who uses Facebook Marketplace specifically because Craigslist's interface feels unsafe. This guided my decision to prioritize visual clarity over data density while honoring the core user base who prioritize function over form.
+				  </p>
+				</div>
+				
+				<div class="personas-grid">
+				  <div class="persona-card">
+					<img src={imgPersona1} alt="User persona 1" />
+				  </div>
+				  <div class="persona-card">
+					<img src={imgPersona2} alt="User persona 2" />
+				  </div>
+				  <div class="persona-card">
+					<img src={imgPersona3} alt="User persona 3" />
+				  </div>
+				</div>
+			  </div>
+			</section>
+	  
+			<section class="content-section alt">
+			  <div class="container">
+				<h2 class="section-title">The Process</h2>
+				
+				<div class="content-text">
+				  <p>The heuristic evaluation revealed that the current navigation was overwhelming. To fix this, I needed to understand how users mentally organized the content.</p>
+				  
+				  <ul>
+					<li><strong>Card Sorting:</strong> I conducted a card sort with 10 participants using 20 distinct Craigslist labels.</li>
+					<li><strong>The Insight:</strong> Participants consistently grouped the 20 labels into just 4 distinct categories. Which I then used to create a sitemap and main navigation.</li>
+					<li><strong>The Pivot:</strong> This data drove my decision to abandon the "exposed links" list in favor of a mega menu structure. This aligns the site with the user's mental model, hiding complexity until it's needed.</li>
+				  </ul>
+				</div>
+	  
+				<div class="process-grid">
+				  <div class="process-item">
+					<img src={imgCraigslistNav} alt="Redesigned sitemap" />
+					<p>Redesigned sitemap</p>
+				  </div>
+				  <div class="process-item">
+					<img src={imgSiteMap} alt="Redesigned main navigation" />
+					<p>Redesigned main navigation</p>
+				  </div>
+				</div>
+	  
+				<div class="process-full">
+				  <div class="process-item">
+					<img src={imgHomeWireframe} alt="Homepage wireframe" />
+					<p>Homepage wireframe iteration</p>
+				  </div>
+				</div>
+			  </div>
+			</section>
+	  
+			<section class="content-section">
+			  <div class="container">
+				<h2 class="section-title">The Solution</h2>
+				
+				<div class="content-text">
+				  <p>To combat the trust deficit I redesigned the visual language to leverage the aesthetic-usability effect to my advantage. My goal was to rebrand without "reblanding", modernizing the interface without erasing its original identity and alienating the core user base who prioritize function over form.</p>
+				  
+				  <div class="subsection">
+					<h3>Typography</h3>
+					<ul>
+					  <li><strong>Font Pairing:</strong> I selected Young Serif for primary headers to preserve the classic feel Craigslist is known for that they got from their use of Times New Roman. I paired this with Poppins, a geometric sans-serif, for body text to ensure readability across dense listings.</li>
+					  <li><strong>Hierarchy:</strong> I implemented a strict type scale (Header 1 through Body Small) to ensure a crystal clear visual hierarchy, allowing users to scan listings faster and decreasing perceived information density.</li>
+					</ul>
+				  </div>
+	  
+				  <div class="subsection">
+					<h3>Color Palette</h3>
+					<ul>
+					  <li><strong>Brand Identity:</strong> I retained the iconic Craigslist purple to maintain immediate brand recognition.</li>
+					  <li><strong>CTA Color:</strong> I introduced a high contrast yellow for primary actions (specifically the "Post" button). This strategic use of color solves the navigation issues found in testing by drawing the eye immediately to key CTAs.</li>
+					</ul>
+				  </div>
+	  
+				  <div class="subsection">
+					<h3>Key Design Improvements</h3>
+					<ul>
+					  <li>The New Homepage replaces the wall of text with clear category dropdowns based on the card sort results to help guard against information overload.</li>
+					  <li>I addressed the finding that 25% of users couldn't find the "Post" button by making it physically larger and styling it in the accent yellow.</li>
+					  <li>I simplified the posting questions to remove redundancies and redesigned the location selection screen, making the process faster and more intuitive.</li>
+					</ul>
+				  </div>
+				</div>
+	  
+				<div class="solution-images">
+				  <img src={imgProto0000} alt="High fidelity prototype homepage" />
+				  <img src={imgProto0002} alt="High fidelity prototype posting flow 1" />
+				  <img src={imgProto00031} alt="High fidelity prototype posting flow 2" />
+				  <img src={imgProto0004} alt="High fidelity prototype posting flow 3" />
+				  <img src={imgProto0005} alt="High fidelity prototype final screen" />
+				</div>
+			  </div>
+			</section>
+	  
+			<section class="content-section alt">
+			  <div class="container">
+				<h2 class="section-title">Reflection</h2>
+				
+				<div class="content-text">
+				  <div class="subsection">
+					<h3>What I Learned</h3>
+					<ul>
+					  <li><strong>The Importance of the Aesthetic Usability Effect:</strong> I knew of the aesthetic usability effect before this project but seeing such a clear example of it in Craigslist really hammers home its significance.</li>
+					  <li><strong>Respecting the Core User Base:</strong> In my initial research, I found that older users (like the "Brad" persona) actually preferred the density of information. The design challenge wasn't just "simplifying" the interface, but organizing the density. I learned that modernization shouldn't come at the cost of alienating the core "function over form" user base.</li>
+					</ul>
+				  </div>
+	  
+				  <div class="subsection">
+					<h3>What I Would Do Differently</h3>
+					<ul>
+					  <li><strong>Expand the Card Sort Activity:</strong> Due to software constraints, my card sort was limited to 20 labels. In a professional environment, I would expand the card sort to 50+ items to analyze the entire site's architecture rather than just the small snapshot I did for this project.</li>
+					  <li><strong>Mobile First Adaptation:</strong> I focused exclusively on the desktop experience for this project. In a future iteration, I would want to translate these dense forms into a redesigned mobile responsive layout to cater even further towards the younger generation of users I targeted in this project.</li>
+					  <li><strong>Validation Testing:</strong> To confirm that the redesign accomplished its goals, I would conduct comparative usability testing with the original participants to assess if any metrics from the baseline test had improved with the redesign.</li>
+					</ul>
+				  </div>
+				</div>
+			  </div>
+			</section>
+		  </div>
+	</body>
+</html>

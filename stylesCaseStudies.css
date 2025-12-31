@@ -1,0 +1,239 @@
+/* Case Study Page */
+.case-study-page {
+    background: #fff;
+  }
+  
+  .case-study-nav {
+    position: sticky;
+    top: 0;
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid #e5e7eb;
+    z-index: 50;
+    padding: 1rem 0;
+  }
+  
+  .case-study-nav a {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    font-style: italic;
+    color: #000;
+    text-decoration: none;
+    transition: opacity 0.2s;
+  }
+  
+  .case-study-nav a:hover {
+    opacity: 0.8;
+  }
+  
+  /* Hero Section */
+  .case-hero {
+    background: #fff;
+    border-bottom: 1px solid #e5e7eb;
+    padding: 5rem 0;
+  }
+  
+  .case-hero-title {
+    font-family: 'Averia Serif Libre', serif;
+    font-size: clamp(2rem, 5vw, 4rem);
+    margin-bottom: 2rem;
+    text-align: left;
+    color: #000;
+  }
+  
+  .case-hero-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    align-items: center;
+  }
+  
+  .case-hero-image {
+    width: 100%;
+    border-radius: 0.5rem;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  }
+  
+  .case-hero-text {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  .case-section-title {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+  }
+  
+  .case-section-text {
+    color: #4b5563;
+    line-height: 1.7;
+  }
+  
+  /* Content Sections */
+  .content-section {
+    padding: 4rem 0;
+  }
+  
+  .content-section.alt {
+    background: #f9fafb;
+  }
+  
+  .section-title {
+    font-family: 'Raleway', sans-serif;
+    font-size: clamp(1.875rem, 4vw, 2.5rem);
+    margin-bottom: 2rem;
+  }
+  
+  .section-title-center {
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+  
+  /* Before/After Grid */
+  .before-after-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-bottom: 3rem;
+  }
+  
+  .before-after-item h3 {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+  
+  .before-after-item img {
+    width: 100%;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .before-after-item p {
+    color: #6b7280;
+    font-size: 0.875rem;
+    margin-top: 0.5rem;
+    text-align: center;
+  }
+  
+  /* Content Text */
+  .content-text {
+    max-width: 56rem;
+    margin: 0 auto;
+    color: #1f2937;
+  }
+  
+  .content-text p {
+    margin-bottom: 1.5rem;
+  }
+  
+  .content-text ol,
+  .content-text ul {
+    margin-bottom: 1.5rem;
+    padding-left: 1.5rem;
+  }
+  
+  .content-text li {
+    margin-bottom: 1rem;
+  }
+  
+  .content-text strong {
+    font-weight: 600;
+  }
+  
+  .content-text ul ul {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    color: #4b5563;
+  }
+  
+  /* Personas Grid */
+  .personas-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+  }
+  
+  .persona-card {
+    background: #f9fafb;
+    padding: 1rem;
+    border-radius: 0.5rem;
+  }
+  
+  .persona-card img {
+    width: 100%;
+    border-radius: 0.25rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Process Images Grid */
+  .process-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+  }
+  
+  .process-item {
+    background: #fff;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  }
+  
+  .process-item img {
+    width: 100%;
+    border-radius: 0.25rem;
+  }
+  
+  .process-item p {
+    color: #6b7280;
+    font-size: 0.875rem;
+    margin-top: 0.5rem;
+  }
+  
+  .process-full {
+    margin-top: 2rem;
+  }
+  
+  /* Solution Images */
+  .solution-images {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-top: 2rem;
+  }
+  
+  .solution-images img {
+    width: 100%;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Subsection */
+  .subsection {
+    margin-bottom: 2rem;
+  }
+  
+  .subsection h3 {
+    font-size: 1.25rem;
+    margin-bottom: 0.75rem;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .nav-content {
+      flex-direction: column;
+    }
+    
+    .studies-grid {
+      grid-template-columns: 1fr;
+    }
+    
+    .footer-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+  
