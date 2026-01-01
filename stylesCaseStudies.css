@@ -1,29 +1,61 @@
+/* Reset and Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+html {
+  overscroll-behavior: none
+}
+
+body {
+  font-family: 'Raleway', sans-serif;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  /* width: 100%; */
+}
+
+
+
+/* Navigation */
+.nav {
+  backdrop-filter: blur(10px);
+  background: rgba(178, 199, 255, 0.3);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  /* z-index: 50; */
+  padding: 1rem;
+}
+
+.navLinks {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+}
+
+.navLinks a {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 500;
+  font-style: italic;
+  color: #000;
+  text-decoration: underline;
+  font-size: 1.125rem;
+  transition: opacity 0.2s;
+}
+
+.brandNavItem {
+  margin-right: auto;
+}
+
+
 /* Case Study Page */
 .case-study-page {
     background: #fff;
-  }
-  
-  .case-study-nav {
-    position: sticky;
-    top: 0;
-    background: rgba(255, 255, 255, 0.8);
-    backdrop-filter: blur(10px);
-    border-bottom: 1px solid #e5e7eb;
-    z-index: 50;
-    padding: 1rem 0;
-  }
-  
-  .case-study-nav a {
-    font-family: 'Raleway', sans-serif;
-    font-weight: 500;
-    font-style: italic;
-    color: #000;
-    text-decoration: none;
-    transition: opacity 0.2s;
-  }
-  
-  .case-study-nav a:hover {
-    opacity: 0.8;
   }
   
   /* Hero Section */
@@ -236,4 +268,50 @@
       grid-template-columns: 1fr;
     }
   }
-  
+
+  /* Footer */
+.footer {
+  backdrop-filter: blur(10px);
+  background: rgba(178, 199, 255, 0.3);
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 1rem;
+  position: relative;
+  bottom: 0;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.footer-section h3 {
+  font-family: 'Raleway', sans-serif;
+  color: #000;
+  margin-bottom: 1rem;
+}
+
+.footer-section p,
+.footer-section a {
+  font-family: 'Raleway', sans-serif;
+  color: #000;
+}
+
+.footer-section a {
+  text-decoration: underline;
+  display: block;
+  margin-bottom: 0.5rem;
+  transition: opacity 0.2s;
+}
+
+.footer-section a:hover {
+  opacity: 0.8;
+}
+
+.footer-bottom {
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 0.875rem;
+}
