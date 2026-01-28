@@ -41,6 +41,8 @@ main {
     border-bottom: 1px solid rgba(255, 255, 255, 0.3);
     /* z-index: 50; */
     padding: 1rem;
+    padding-left: 5%;
+    padding-right: 5%;
 }
 
 .navLinks {
@@ -187,6 +189,6 @@ main {
   .footer-bottom {
     text-align: center;
     font-family: 'Raleway', sans-serif;
-    color: rgba(255, 255, 255, 0.6);
+    color: #fff;
     font-size: 0.875rem;
   }
